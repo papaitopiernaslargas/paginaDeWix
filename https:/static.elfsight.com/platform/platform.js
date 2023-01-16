@@ -924,7 +924,7 @@
     self.getEappsClass = function(result) {
       var successRates = result.className.split(" ");
       return 1 === successRates.length ? result.className : successRates.length > 1 ? (successRates.filter(function(pathToDestinationFile) {
-        return /elfsight-app-[\S]+/.test(pathToDestinationFile);
+        return /elfsight-app-faabb025-8c68-44b4-a762-47f1c5b1ead5/.test(pathToDestinationFile);
       }), successRates[0]) : void 0;
     };
     /**
@@ -932,7 +932,7 @@
      * @return {?}
      */
     self.getWidgetIdByElement = function(t) {
-      return "div" === t.tagName.toLowerCase() ? self.getEappsClass(t).replace("elfsight-app-", "") : t.getAttribute("data-id");
+      return "div" === t.tagName.toLowerCase() ? self.getEappsClass(t).replace("elfsight-app-faabb025-8c68-44b4-a762-47f1c5b1ead5", "") : t.getAttribute("data-id");
     };
     /**
      * @param {!Node} img
@@ -1062,7 +1062,7 @@
       var abstractAltContent = function buildReceiveDiv(i) {
         /** @type {!Element} */
         var smileyContainer = document.createElement("div");
-        return smileyContainer.className = "elfsight-app-" + i, smileyContainer;
+        return smileyContainer.className = "elfsight-app-faabb025-8c68-44b4-a762-47f1c5b1ead5", smileyContainer;
       };
       self.getWidgetsElements().forEach(function(list) {
         if (self.getWidgetIdByElement(list) === obj) {
