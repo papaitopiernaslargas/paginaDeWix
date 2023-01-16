@@ -1,1 +1,2 @@
-document.getElementsByClassName("elfsight-app")[0].textContent = 'Testing here';
+      let d = new Date();
+      document.body.innerHTML = "<h1>Today's date is " + d + "</h1>"
